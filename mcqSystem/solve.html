@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <style>
+        body{
+    font-family: 'Courier New', Courier, monospace;
+    background: yellow;
+    font-size: 30px;
+  }
+  input[type=text]{
+    border: none;
+    outline: none;
+    height: 30px;
+    font-size: 30px;
+    background: yellow;
+    border-bottom: 2px solid red;
+  }
+  h4{
+    color:red;
+    padding-left: 400px;
+  }
+
+  label{
+    color: blue;
+    
+  }
+
+  input[type="submit"]{
+    outline: none;
+    border: none;
+    background: cyan;
+    font-size: 20px;
+    padding : 7px 5px;
+    border-radius: 5px;
+    transition: 0.8s;
+  }
+  input[type="submit"]:hover{
+    box-shadow: 0px 10px 20px red,0px -10px 20px red;
+  }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+
+   <script src="solve.js"></script>
+   <script src="alert.js"></script>
+    <title>solve questions</title>
+    
+</head>
+<body>
+    Enter the question number <br><br>
+    <input type="text" id="qid" name="qid"><br><br>
+    <input type="submit" id="btn" name="btn" value="submit">
+    <br>
+    <p id="pid"></p>
+
+    <br><br>
+    Enter the correct option <br><br>
+    <input type="text" id="ans" name="ans">
+    <br><br>
+    <input type="submit" id="show" name="show" value="result">
+    <br>
+    <p id="pid1"></p>
+    <br><br>
+    back to <a href="index.html">Main Page</a>
+</body>
+</html>

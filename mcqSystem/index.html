@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+
+<script src="index.js">
+
+    </script>
+    <script src="alert.js"></script>
+<head>
+<style>
+  body{
+    font-family: 'Courier New', Courier, monospace;
+    background: yellow;
+    font-size: 30px;
+  }
+  input[type=text]{
+    border: none;
+    outline: none;
+    height: 30px;
+    font-size: 30px;
+    background: yellow;
+    border-bottom: 2px solid red;
+  }
+  h4{
+    color:red;
+    padding-left: 400px;
+  }
+
+  label{
+    color: blue;
+    
+  }
+
+  input[type="submit"]{
+    outline: none;
+    border: none;
+    background: cyan;
+    font-size: 20px;
+    padding : 7px 5px;
+    border-radius: 5px;
+    transition: 0.8s;
+  }
+  input[type="submit"]:hover{
+    box-shadow: 0px 10px 20px red,0px -10px 20px red;
+  }
+
+  button{
+    outline: none;
+    border: none;
+    background: cyan;
+    font-size: 20px;
+    padding : 7px 5px;
+    border-radius: 5px;
+    transition: 0.8s;
+  }
+
+  button:hover{
+    box-shadow: 0px 10px 20px red,0px -10px 20px red;
+  }
+</style>
+
+  <title>Insert New MCQ in the Database</title>
+</head>
+
+<body>
+  <h4>Insert New MCQ in the Database</h4>
+  
+
+<label for="fname">Enter Question:</label>
+  <input type="text" id="qun" name="qun" required><br><br>
+  <label >1'st Option:</label>
+  <input type="text" id="op1" name="op1" required><br><br>
+  <label for="lname">2'st Option:</label>
+  <input type="text" id="op2" name="op2" required><br><br>
+  <label for="lname">3'rd Option:</label>
+  <input type="text" id="op3" name="op3" required><br><br>
+  <label for="lname">4'th Option:</label>
+  <input type="text" id="op4" name="op4" required><br><br>
+  <label for="lname">Correct Option:</label><br>
+  <input type = "radio" class="ops" id = "rop1" name="ops" value="1"><span>option 1</span> <br>
+  <input type = "radio" class="ops" id = "rop2" name="ops" value="2"><span>option 2</span> <br>
+  <input type = "radio" class="ops" id = "rop3" name="ops" value="3"><span>option 3</span> <br>
+  <input type = "radio" class="ops" id = "rop4" name="ops" value="4"><span>option 4</span> <br>
+  
+  <br>
+  <input type="submit" id="sub" value="Submit">
+
+  <button onclick=location=URL>load more questions</button>
+
+  <br><br>
+  click <a href="solve.html">here</a> to solve questions
+</body>
+
+</html>
